@@ -1,0 +1,29 @@
+<html><head><script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script><style>body { margin: 0; }</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+
+<script>
+function createZip() {
+  const zip = new JSZip();
+  // Ajouter le contenu HTML
+  zip.file("CV_Hamza_Faraji.html", document.documentElement.outerHTML);
+  
+  // Générer le ZIP
+  zip.generateAsync({type:"blob"}).then(function(content) {
+    saveAs(content, "CV_Hamza_Faraji.zip");
+  });
+}
+</script>
+
+<!-- Ajoutez ce bouton dans votre header -->
+</head><body data-new-gr-c-s-check-loaded="14.1232.0" data-gr-ext-installed=""><button onclick="createZip()" style="
+  background: #004080;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+  font-size: 1.1em;
+  transition: background 0.3s;">
+  Télécharger le CV en ZIP
+</button></body></html>
