@@ -4,92 +4,146 @@
   <meta charset="UTF-8">
   <title>CV Hamza FARAJI</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body { font-family: Arial, sans-serif; margin: 40px auto; max-width: 900px; background: #f9f9f9; padding: 20px; color: #222; }
-    h1, h2, h3 { color: #004080; }
-    ul { padding-left: 20px; }
-    section { margin-bottom: 30px; }
-    .header, .contact, .langues, .logiciels { display: flex; flex-wrap: wrap; justify-content: space-between; }
-    .contact div { margin-bottom: 10px; }
-    .section-title { border-bottom: 2px solid #004080; padding-bottom: 4px; margin-bottom: 10px; }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      background-color: #f2f4f8;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(90deg, #004080, #0066cc);
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    header p {
+      margin: 8px 0;
+      font-size: 1.2em;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h2.section-title {
+      color: #004080;
+      border-left: 5px solid #004080;
+      padding-left: 10px;
+      margin-top: 40px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .contact-info {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 10px;
+    }
+    .contact-info div {
+      background: #eaf1fa;
+      padding: 10px 15px;
+      border-radius: 8px;
+    }
   </style>
 </head>
 <body>
 
-  <section class="header">
-    <div>
-      <h1>Hamza FARAJI</h1>
-      <p><strong>Étudiant en Master 2 - Ingénierie Thermique et Énergie</strong></p>
-      <p>À la recherche d’un stage de Projet de Fin d’Études (PFE) | Durée : 4 à 6 mois</p>
-    </div>
-    <div class="contact">
+  <header>
+    <h1>Hamza FARAJI</h1>
+    <p><strong>Étudiant en Master 2 - Ingénierie Thermique et Énergie</strong></p>
+    <p>À la recherche d’un stage de Projet de Fin d’Études (PFE) | Durée : 4 à 6 mois</p>
+    <div class="contact-info">
       <div>Email : hmiza.contact@gmail.com</div>
-      <div>Téléphone : 06.20.47.11.30</div>
-      <div>LinkedIn : <a href="https://www.linkedin.com/in/hamzafaraji/" target="_blank">hamzafaraji</a></div>
-      <div>Localisation : Belfort, France</div>
+      <div>Tél : 06.20.47.11.30</div>
+      <div><a href="https://www.linkedin.com/in/hamzafaraji/" target="_blank">LinkedIn</a></div>
+      <div>Belfort, France</div>
     </div>
-  </section>
+  </header>
 
-  <section>
-    <h2 class="section-title">🎓 Formation</h2>
-    <ul>
-      <li>2023–2025 : Master Ingénierie Thermique et Énergie – UFR STGI, Université Bourgogne Franche-Comté</li>
-      <li>2021–2022 : Licence Professionnelle – UFR STGI</li>
-      <li>2018–2019 : DUT – École Supérieure de Technologie, Fès</li>
-      <li>Baccalauréat Scientifique – Lycée Ibn Al Atir, Maroc</li>
-    </ul>
-  </section>
+  <div class="container">
+    <section>
+      <h2 class="section-title">🎓 Formation</h2>
+      <ul>
+        <li>2023–2025 : Master Ingénierie Thermique et Énergie – UFR STGI, Université Bourgogne Franche-Comté</li>
+        <li>2021–2022 : Licence Professionnelle – UFR STGI</li>
+        <li>2018–2019 : DUT – École Supérieure de Technologie, Fès</li>
+        <li>Baccalauréat Scientifique – Lycée Ibn Al Atir, Maroc</li>
+      </ul>
+    </section>
 
-  <section>
-    <h2 class="section-title">💼 Expériences</h2>
-    <ul>
-      <li><strong>2023–2024 – Assistant Projets Solaires – ELECENERGIES</strong><br>Étude de faisabilité photovoltaïque, modélisation financière, ROI, rapports & recommandations.</li>
-      <li><strong>2022–2023 – Ingénieur Efficacité Énergétique (alternance) – E’NERGYS</strong><br>Automatisation de la collecte de données, EMS, analyse technico-économique, outils de suivi énergétique.</li>
-      <li><strong>2021–2022 – Assistant Ingénieur Énergie – ECOMED</strong><br>Optimisation énergétique, production de biogaz, amélioration de l’approvisionnement en gaz domestique.</li>
-    </ul>
-  </section>
+    <section>
+      <h2 class="section-title">💼 Expériences</h2>
+      <ul>
+        <li><strong>2023–2024 – Assistant Projets Solaires – ELECENERGIES</strong><br>Étude de faisabilité photovoltaïque, modélisation financière, ROI, rapports & recommandations.</li>
+        <li><strong>2022–2023 – Ingénieur Efficacité Énergétique (alternance) – E’NERGYS</strong><br>Automatisation de la collecte de données, EMS, analyse technico-économique, outils de suivi énergétique.</li>
+        <li><strong>2021–2022 – Assistant Ingénieur Énergie – ECOMED</strong><br>Optimisation énergétique, production de biogaz, amélioration de l’approvisionnement en gaz domestique.</li>
+      </ul>
+    </section>
 
-  <section>
-    <h2 class="section-title">🧠 Compétences Techniques</h2>
-    <ul>
-      <li>Énergies renouvelables, études énergétiques, thermique du bâtiment, optimisation énergétique</li>
-      <li>Management de l’énergie, audit énergétique, simulation thermique dynamique (STD)</li>
-    </ul>
-  </section>
+    <section>
+      <h2 class="section-title">🧠 Compétences Techniques</h2>
+      <ul>
+        <li>Énergies renouvelables, études énergétiques, thermique du bâtiment, optimisation énergétique</li>
+        <li>Management de l’énergie, audit énergétique, simulation thermique dynamique (STD)</li>
+      </ul>
+    </section>
 
-  <section class="logiciels">
-    <h2 class="section-title">🛠 Logiciels</h2>
-    <ul>
-      <li>AutoCAD MEP, Perrenoud (RT2012, RE2020), Pléiades</li>
-      <li>Ansys Fluent, COMSOL, MATLAB/SIMULINK</li>
-      <li>Python (calculs numériques), Pack Office (Word, Excel, PPT)</li>
-    </ul>
-  </section>
+    <section>
+      <h2 class="section-title">🛠 Logiciels</h2>
+      <ul>
+        <li>AutoCAD MEP, Perrenoud (RT2012, RE2020), Pléiades</li>
+        <li>Ansys Fluent, COMSOL, MATLAB/SIMULINK</li>
+        <li>Python (calculs numériques), Pack Office (Word, Excel, PPT)</li>
+      </ul>
+    </section>
 
-  <section class="langues">
-    <h2 class="section-title">🌐 Langues</h2>
-    <ul>
-      <li>Français : Courant</li>
-      <li>Anglais : Courant</li>
-      <li>Arabe : Bilingue</li>
-    </ul>
-  </section>
+    <section>
+      <h2 class="section-title">🌐 Langues</h2>
+      <ul>
+        <li>Français : Courant</li>
+        <li>Anglais : Courant</li>
+        <li>Arabe : Bilingue</li>
+      </ul>
+    </section>
 
-  <section>
-    <h2 class="section-title">📁 Projets Tuteurés</h2>
-    <ul>
-      <li>RE2020 : Analyse comparative des matériaux, impact économique/environnemental, conformité réglementaire</li>
-      <li>RT2012 : Étude thermique, optimisation de l’efficacité énergétique</li>
-      <li>Valorisation énergétique des déchets : étude de filières et potentiel énergétique</li>
-    </ul>
-  </section>
+    <section>
+      <h2 class="section-title">📁 Projets Tuteurés</h2>
+      <ul>
+        <li>RE2020 : Analyse comparative des matériaux, impact économique/environnemental, conformité réglementaire</li>
+        <li>RT2012 : Étude thermique, optimisation de l’efficacité énergétique</li>
+        <li>Valorisation énergétique des déchets : étude de filières et potentiel énergétique</li>
+      </ul>
+    </section>
 
-  <section>
-    <h2 class="section-title">🎯 Centres d’intérêt</h2>
-    <ul>
-      <li>Course à pied, voyages, jeu d’échecs</li>
-    </ul>
-  </section>
+    <section>
+      <h2 class="section-title">🎯 Centres d’intérêt</h2>
+      <ul>
+        <li>Course à pied, voyages, jeu d’échecs</li>
+      </ul>
+    </section>
+  </div>
 
 </body>
 </html>
