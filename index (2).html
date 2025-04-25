@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Hamza FARAJI - Ingénieur Thermique & Énergie</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --text-color: #34495e;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background: #f8f9fa;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            text-align: center;
+            padding: 3rem 0;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .section-title {
+            color: var(--secondary-color);
+            border-left: 4px solid var(--secondary-color);
+            padding-left: 1rem;
+            margin: 2rem 0 1rem;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .experience-item, .education-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .competence-categories {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .competence-category {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 1.2rem;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+            position: relative;
+        }
+
+        li::before {
+            content: "▹";
+            position: absolute;
+            left: -1.2rem;
+            color: var(--secondary-color);
+        }
+
+        .contact-info {
+            margin: 1rem 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: center;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+
+        a:hover {
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Hamza FARAJI</h1>
+            <p>Étudiant en Master 2 Ingénierie Thermique et Énergie</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    ✉️ <a href="mailto:hmiza.contact@gmail.com">hmiza.contact@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    📱 06.20.47.11.30
+                </div>
+                <div class="contact-item">
+                    🔗 <a href="https://www.linkedin.com/in/hamzafaraji/" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Section Formation -->
+        <section>
+            <h2 class="section-title">Formation</h2>
+            <div class="grid-container">
+                <div class="education-item">
+                    <h3>Master Ingénierie Thermique et Énergie</h3>
+                    <p>UFR STGI Université Bourgogne Franche-Comté</p>
+                </div>
+                <!-- Ajouter les autres formations de la même manière -->
+            </div>
+        </section>
+
+        <!-- Section Expériences -->
+        <section>
+            <h2 class="section-title">Expériences Professionnelles</h2>
+            <div class="grid-container">
+                <div class="experience-item">
+                    <h3>Ingénieur Efficacité Energétique – E'NERGYS</h3>
+                    <ul>
+                        <li>Analyse du marché des EMS et étude technico-économique</li>
+                        <li>Déploiement et optimisation de la solution EMS identifiée</li>
+                        <!-- Ajouter les autres points -->
+                    </ul>
+                </div>
+                <!-- Répéter pour les autres expériences -->
+            </div>
+        </section>
+
+        <!-- Section Compétences -->
+        <section>
+            <h2 class="section-title">Compétences Techniques</h2>
+            <div class="competence-categories">
+                <div class="competence-category">
+                    <h3>Thermique</h3>
+                    <ul>
+                        <li>Machines thermiques</li>
+                        <li>Simulation thermique</li>
+                        <!-- Ajouter les autres compétences -->
+                    </ul>
+                </div>
+                <!-- Répéter pour les autres catégories -->
+            </div>
+        </section>
+
+        <!-- Ajouter les autres sections (Projets, Logiciels, Langues, etc.) -->
+
+    </main>
+</body>
+</html>
