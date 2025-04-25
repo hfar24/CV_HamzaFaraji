@@ -1,17 +1,208 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>The Bismarck</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Hamza Faraji</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #e74c3c;
+            --text-color: #34495e;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background: #f8f9fa;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            text-align: center;
+            padding: 2rem 0;
+            background: linear-gradient(135deg, var(--primary-color), #34495e);
+            color: white;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .section-title {
+            color: var(--secondary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+            margin: 2rem 0 1rem;
+        }
+
+        .grid-container {
+            display: grid;
+            gap: 1.5rem;
+        }
+
+        .experience-item, .education-item {
+            background: white;
+            padding: 1.2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 1.2rem;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--secondary-color);
+        }
+
+        .competence-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .availability {
+            text-align: center;
+            margin: 2rem 0;
+            padding: 1rem;
+            background: var(--secondary-color);
+            color: white;
+            border-radius: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
 </head>
 <body>
-  <h1>German Battleship Bismarck</h1>
-  <nav>
-    <ul>
-      <li><a href="crew/index.html">Crew</a></li>
-    </ul>
-  </nav>
-  <p>Welcome to a historical tribute site to the German battleship Bismarck and its crew.</p>
+    <header>
+        <div class="container">
+            <h1>Hamza Faraji</h1>
+            <p>Rue de Cernay, 51100 Reims</p>
+            <p>06 20 47 11 30</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Formation -->
+        <section>
+            <h2 class="section-title">Formation</h2>
+            <div class="grid-container">
+                <div class="education-item">
+                    <h3>2022 – 2025 : Master Thermique et Énergie</h3>
+                </div>
+                <div class="education-item">
+                    <h3>2019 – 2022 : Licence Thermique et Énergie</h3>
+                </div>
+                <div class="education-item">
+                    <h3>2018 – 2019 : Baccalauréat en Sciences Physiques</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Expériences -->
+        <section>
+            <h2 class="section-title">Expériences Professionnelles</h2>
+            <div class="grid-container">
+                <div class="experience-item">
+                    <h3>Employé Polyvalent – Manhattan Pizza (6 mois)</h3>
+                    <ul>
+                        <li>Préparation des pizzas, tacos, burgers et autres plats</li>
+                        <li>Accueil des clients et prise de commandes</li>
+                        <li>Déchargement et stockage des livraisons</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <h3>Agent de Production – PSA (4 mois)</h3>
+                    <ul>
+                        <li>Découpage et emboutissage de pièces métalliques</li>
+                        <li>Contrôle qualité des pièces mécaniques</li>
+                        <li>Utilisation d'outils de mesure spécialisés</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <h3>Équipier Polyvalent – Marjane (3 mois)</h3>
+                    <ul>
+                        <li>Approvisionnement des rayons</li>
+                        <li>Encaissement et service client</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Compétences -->
+        <section>
+            <h2 class="section-title">Compétences</h2>
+            <div class="competence-grid">
+                <div class="experience-item">
+                    <h3>Techniques</h3>
+                    <ul>
+                        <li>Pack Office (Word, Excel, PowerPoint)</li>
+                        <li>Adobe (Premiere, Photoshop, After Effects)</li>
+                        <li>Analyse thermique et énergétique</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <h3>Linguistiques</h3>
+                    <ul>
+                        <li>Français : Courant (DELF B2)</li>
+                        <li>Anglais : Intermédiaire</li>
+                        <li>Arabe : Langue maternelle</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Centres d'intérêt -->
+        <section>
+            <h2 class="section-title">Centres d'Intérêt</h2>
+            <div class="experience-item">
+                <ul>
+                    <li>✅ Natation</li>
+                    <li>✅ Jeux d'échecs</li>
+                    <li>✅ Voyages</li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="availability">
+            <h3>Job d'été | Disponible Immédiatement</h3>
+        </div>
+    </main>
 </body>
 </html>
